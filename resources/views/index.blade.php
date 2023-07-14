@@ -7,6 +7,7 @@
     @vite('resources/css/app.css')
 </head>
 <body>
+    <x-header/>
     <section id="home" class="pt-36">
         <div class="container">
             <div class="flex flex-wrap">
