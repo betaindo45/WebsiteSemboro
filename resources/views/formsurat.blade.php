@@ -10,5 +10,5 @@
 
 <body>
     <x-header />
-    <h1>Form Surat</h1>
+    <h1 class="font-semibold">Form Surat</h1>
 </body>
