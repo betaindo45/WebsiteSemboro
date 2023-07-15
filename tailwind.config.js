@@ -6,12 +6,19 @@ export default {
             "./resources/**/*.vue",
           ],
   theme: {
+    container: {
+      center: true,
+      padding: '16px',
+    },
     extend: {
       colors: {
         'primary': '#fca103',
         'secondary': '#f5ba6e',
         'hover': '#faedcd',
-    }
+    },
+    screens: {
+      '2xl': '1320px',
+    },
   },
   plugins: [],
   }
