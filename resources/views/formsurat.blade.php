@@ -21,14 +21,20 @@
                 <div class="w-11/12 p-12 bg-white sm:w-8/12 md:w-1/2 lg:w-5/12">
                     <h1 class="text-xl font-semibold">Tolong isi informasi anda dibawah untuk melakukan pengajuan</h1>
                     <form class="mt-6">
-                        <label for="firstname" class="block text-xs font-semibold text-gray-600 uppercase">Nama</label>
-                        <input id="firstname" type="text" name="firstname" placeholder="Budi" autocomplete="given-name" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
-                        <label for="email" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">E-mail</label>
-                        <input id="email" type="email" name="email" placeholder="john.doe@company.com" autocomplete="email" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
-                        <label for="password" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Password</label>
-                        <input id="password" type="password" name="password" placeholder="********" autocomplete="new-password" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
-                        <label for="password-confirm" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Confirm password</label>
-                        <input id="password-confirm" type="password" name="password-confirm" placeholder="********" autocomplete="new-password" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <label for="name" class="block text-xs font-semibold text-gray-600 uppercase">Nama</label>
+                        <input id="name" type="text" name="firstname" placeholder="Budi" autocomplete="given-name" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <label for="nik" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Nomor Induk Kependudukan (NIK)</label>
+                        <input id="nik" type="text" name="nik" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <label for="nokk" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Nomor Kartu Keluarga (KK)</label>
+                        <input id="nokk" type="text" name="nokk" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <label for="keperluan" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Keperluan Surat</label>
+                        <input id="keperluan" type="text" name="keperluan" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <label for="keterangan" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Keterangan</label>
+                        <input id="keterangan" type="text" name="keterangan" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <label for="nohp" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">No. Handphone</label>
+                        <input id="nohp" type="text" name="nohp" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <label for="email" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Email</label>
+                        <input id="email" type="email" name="email" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
                         <button type="submit" class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
                             Kirim Pengajuan
                         </button>
