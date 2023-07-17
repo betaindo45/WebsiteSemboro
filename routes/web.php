@@ -18,9 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get("/surat", function () {
-    return view("formsurat");
+    return view('formsurat');
 });
 
 Route::get("/login", function(){
-    return view("/auth/login");
+    return view('/auth/login');
+});
+
+Route::get("/profil", function(){
+    return view('profile');
 });
