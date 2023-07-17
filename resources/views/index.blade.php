@@ -9,7 +9,7 @@
                 <div class="w-full self-center px-4 md:w-2/12">
                     <img src="{{asset('img/lambangkab.png')}}" alt="">
                 </div>
-                <div class="w-full self-center px-4 md:w-5/12">
+                <div class="w-full self-center px-4 md:w-5/12 text-center">
                     <h1 class="font-semibold text-primary text-4xl md:text-5xl lg:text-5xl">Desa Semboro</h1>
                     <h2 class="font-medium text-slate-800 text-lg mb-5">Kabupaten Jember</h2>
                     <p class="font-medium text-slate-600 mb-10 leading-relaxed lg:text-2xl">Situs Resmi Desa Semboro</p>
