@@ -27,6 +27,7 @@ Route::get("/login", function(){
 
 Route::get("/profil", function(){
     return view('profile');
+});
 
 Route::get("/admin", function () {
     return view('admin');
