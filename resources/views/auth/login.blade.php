@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Permintaan Surat - Desa Semboro</title>
-    @vite('resources/css/app.css')
-</head>
+@extends('components.head')
+@section('title', 'Login Admin')
 
 <body class="bg-gradient-to-r from-rose-100 to-teal-100">
     <x-header />
@@ -39,7 +32,7 @@
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block align-text-top">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                                             </svg>
-                                            <span class="inline-block ml-1">Back Homepage</span>
+                                            <span class="inline-block ml-1">Back to Homepage</span>
                                         </button>
                                     </div>
                                 </div>

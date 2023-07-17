@@ -22,8 +22,11 @@ Route::get("/surat", function () {
 });
 
 Route::get("/login", function(){
-    return view("/auth/login");
+    return view('/auth/login');
 });
+
+Route::get("/profil", function(){
+    return view('profile');
 
 Route::get("/admin", function () {
     return view('admin');
