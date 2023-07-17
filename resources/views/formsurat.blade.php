@@ -34,7 +34,7 @@
                         <label for="nohp" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">No. Handphone</label>
                         <input id="nohp" type="text" name="nohp" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
                         <label for="email" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Email</label>
-                        <input id="email" type="email" name="email" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <input id="email" type="email" name="email" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"/>
                         <button type="submit" class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
                             Kirim Pengajuan
                         </button>
