@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use App\Models\post;
 
 class contentseeder extends Seeder
 {
@@ -12,6 +13,9 @@ class contentseeder extends Seeder
      */
     public function run(): void
     {
+        post::create([
+            
+        ]);
         //
     }
 }

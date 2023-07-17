@@ -18,9 +18,13 @@ Route::get('/', function () {
 });
 
 Route::get("/surat", function () {
-    return view("formsurat");
+    return view('formsurat');
 });
 
 Route::get("/login", function(){
     return view("/auth/login");
+});
+
+Route::get("/admin", function () {
+    return view('admin');
 });
