@@ -6,14 +6,17 @@
     <section id="home" class="pt-36">
         <div class="container">
             <div class="flex flex-wrap">
-                <div class="w-full self-center px-4 md:w-1/2">
+                <div class="w-full self-center px-4 md:w-2/12">
+                    <img src="{{asset('img/lambangkab.png')}}" alt="">
+                </div>
+                <div class="w-full self-center px-4 md:w-5/12">
                     <h1 class="font-semibold text-primary text-4xl md:text-5xl lg:text-5xl">Desa Semboro</h1>
                     <h2 class="font-medium text-slate-800 text-lg mb-5">Kabupaten Jember</h2>
                     <p class="font-medium text-slate-600 mb-10 leading-relaxed lg:text-2xl">Situs Resmi Desa Semboro</p>
                     <a href="/profil" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-2xl hover:bg-hover hover:text-teal-950 transition duration-500 ease-in-out">Profil Desa</a>
                     <a href="/surat" class="text-base font-semibold text-white bg-primary py-3 px-8 rounded-full hover:shadow-2xl hover:bg-hover hover:text-teal-950 transition duration-500 ease-in-out">Ajukan Surat Perizinan</a>
                 </div>
-                <div class="w-full self-end px-4 md:w-1/2">
+                <div class="w-full self-end px-4 md:w-5/12">
                     <div class="relative mt-10 lg:mt-0 lg:right-0">
                         <img src="{{ asset('img/surat.png') }}" alt="surat">
                         <span class="absolute bottom-20 -z-10 left-1/2 -translate-x-1/2 md:-bottom-5 lg:bottom-10 md:scale-80">
