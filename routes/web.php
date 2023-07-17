@@ -18,5 +18,5 @@ Route::get('/', function () {
 });
 
 Route::get("/surat", function () {
-    return view("formsurat");
+    return view('formsurat');
 });
