@@ -13,21 +13,43 @@
             <div class="grid min-h-screen place-items-center -bottom-10 p-0">
                 <div class="w-auto p-12 bg-white">
                     <h1 class="text-xl font-semibold">Tolong isi informasi anda dibawah untuk melakukan pengajuan</h1>
-                    <form class="mt-6">
+                    <form action="/registersurat" method="post" class="mt-6">
+                        @csrf
                         <label for="name" class="block text-xs font-semibold text-gray-600 uppercase">Nama<span class="text-red-600 text-2xl">*</span></label>
-                        <input id="name" type="text" name="firstname" placeholder="Budi" autocomplete="given-name" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <input id="name" type="text" name="name" placeholder="Budi" autocomplete="given-name" class="@error('name') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required value="{{ old('name') }}" />
+                            @error('name')
+                                <div class="alert alert-danger"> {{ $message }} </div>
+                            @enderror
                         <label for="nik" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Nomor Induk Kependudukan (NIK)<span class="text-red-600 text-2xl">*</span></label>
-                        <input id="nik" type="text" name="nik" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
-                        <label for="nokk" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Nomor Kartu Keluarga (KK)<span class="text-red-600 text-2xl">*</span></label>
-                        <input id="nokk" type="text" name="nokk" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <input id="nik" type="text" name="nik" placeholder="" class="@error('nik') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required value="{{ old('nik') }}"/>
+                            @error('nik')
+                                <div class="alert alert-danger"> {{ $message }} </div>
+                            @enderror
+                        <label for="kk" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Nomor Kartu Keluarga (KK)<span class="text-red-600 text-2xl">*</span></label>
+                        <input id="kk" type="text" name="kk" placeholder="" class="@error('kk') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required value="{{ old('kk') }}"/>
+                            @error('nokk')
+                                <div class="alert alert-danger"> {{ $message }} </div>
+                            @enderror
                         <label for="keperluan" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Keperluan Surat<span class="text-red-600 text-2xl">*</span></label>
-                        <input id="keperluan" type="text" name="keperluan" placeholder="Surat Izin" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <input id="keperluan" type="text" name="keperluan" placeholder="Surat Izin" class="@error('keperluan') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required value="{{ old('keperluan') }}" />
+                            @error('keperluan')
+                                <div class="alert alert-danger"> {{ $message }} </div>
+                            @enderror
                         <label for="keterangan" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Keterangan<span class="text-red-600 text-2xl">*</span></label>
-                        <input id="keterangan" type="text" name="keterangan" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <input id="keterangan" type="text" name="keterangan" placeholder="" class="@error('keterangan') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required value="{{ old('keterangan') }}"/>
+                            @error('keterangan')
+                                <div class="alert alert-danger"> {{ $message }} </div>
+                            @enderror
                         <label for="nohp" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">No. Handphone<span class="text-red-600 text-2xl">*</span></label>
-                        <input id="nohp" type="text" name="nohp" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required />
+                        <input id="nohp" type="number" name="nohp" placeholder="" class="@error('nohp') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner" required value="{{ old('nohp') }}"/>
+                            @error('nohp')
+                                <div class="alert alert-danger"> {{ $message }} </div>
+                            @enderror
                         <label for="email" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Email</label>
-                        <input id="email" type="email" name="email" placeholder="" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner"/>
+                        <input id="email" type="email" name="email" placeholder="" class="@error('email') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner "value="{{ old('email') }}"/>
+                            @error('email')
+                                <div class="alert alert-danger"> {{ $message }} </div>
+                            @enderror
                         <button type="submit" class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none">
                             Kirim Pengajuan
                         </button>
