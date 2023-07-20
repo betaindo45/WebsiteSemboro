@@ -1,6 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\RegisterSurat;
+use App\Http\Controllers\PostController;
+use App\Http\Controllers\LoginController;
+use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,19 +20,16 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('index');
 });
+Route::get('/registersurat', [RegisterSurat::class,'index']);
+Route::post('/registersurat', [RegisterSurat::class,'store']);
 
-Route::get("/surat", function () {
-    return view('formsurat');
-});
+Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
 
-Route::get("/login", function(){
-    return view('/auth/login');
-});
-
-Route::get("/profil", function(){
+Route::get('/profil', function(){
     return view('profile');
 });
-
-Route::get("/admin", function () {
+Route::get('/DashboardAdmin',function(){
     return view('admin');
 });
+Route::resource('/DashboardAdmin',PostController::class);
