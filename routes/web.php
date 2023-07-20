@@ -20,14 +20,11 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 Route::get('/', function () {
     return view('index');
 });
-
-Route::get("/surat", function () {
-    return view('formsurat');
-});
 Route::get('/registersurat', [RegisterSurat::class,'index']);
 Route::post('/registersurat', [RegisterSurat::class,'store']);
 
-Route::get('/login', [LoginController::class, 'index']);
+Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
+Route::post('/login', [LoginController::class, 'authenticate']);
 
 Route::get('/profil', function(){
     return view('profile');
