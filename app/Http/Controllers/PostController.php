@@ -12,9 +12,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('posts',[
-            "posts" => post::all()
+        return view('admin',[
+            'posts' => post::all()
         ]);
+
         //
     }
 
@@ -24,6 +25,9 @@ class PostController extends Controller
     public function create()
     {
         //
+        return view('admin',[
+            "posts" => post::all()
+        ]);
     }
 
     /**
