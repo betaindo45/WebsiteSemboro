@@ -4,8 +4,8 @@
 <body class="bg-[url('/public/img/semboromap.png')]">
     <x-header />
     <section id="form" class="pt-12">
-        <div class="container p-10">
-            <div class="bg-slate-500/30 backdrop-blur-lg rounded-md p-1">
+        <div class="container p-10 bg-slate-500/30 backdrop-blur-lg rounded-md m-10">
+            <div class="">
                 <div class="flex flex-wrap m-10">
                     <div class="w-full self-center px-4">
                         <h1 class="font-semibold text-primary text-4xl md:text-5xl lg:text-5xl text-center">FORM

@@ -4,10 +4,6 @@
 <body class="bg-[url('/public/img/semboromap.png')]">
     <x-header />
     <section id="login">
-        @if (session()->has('loginError'))
-        <div class="container">
-        </div>
-        @endif
         <div class="container p-12">
             <div class="flex flex-wrap">
                 <div class="w-full self-center">
