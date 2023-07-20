@@ -1,20 +1,20 @@
 @extends('components.head')
 @section('title', 'Login Admin')
 
-<body class="bg-gradient-to-r from-rose-100 to-teal-100">
+<body class="bg-[url('/public/img/semboromap.png')]">
     <x-header />
     <section id="login">
         @if (session()->has('loginError'))
         <div class="container">
         </div>
         @endif
-        <div class="container">
+        <div class="container p-12">
             <div class="flex flex-wrap">
                 <div class="w-full self-center">
                     <!-- component -->
                     <div class="min-h-screen  flex flex-col justify-center sm:py-12">
-                        <div class="p-0 xs:p-0 mx-auto md:w-full md:max-w-md">
-                            <h1 class="font-bold text-center text-2xl mb-5">Semboro Mail</h1>
+                        <div class="p-10 xs:p-0 mx-auto md:w-full md:max-w-md bg-slate-500/30 backdrop-blur-lg rounded-lg">
+                            <h1 class="font-bold text-center text-2xl mb-5 text-white">Semboro Mail</h1>
                             <div class="bg-white shadow w-full rounded-lg divide-y divide-gray-200">
                                 <div class="px-5 py-7">
                                     <form action="/login" method="post">
@@ -41,7 +41,7 @@
                             <div class="py-5">
                                 <div class="grid grid-cols-2 gap-1">
                                     <div class="text-center sm:text-left whitespace-nowrap">
-                                        <button class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-gray-500 hover:bg-gray-200 focus:outline-none focus:bg-gray-300 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset" onclick="window.location.href='/';">
+                                        <button class="transition duration-200 mx-5 px-5 py-4 cursor-pointer font-normal text-sm rounded-lg text-white hover:bg-gray-200 hover:text-black focus:outline-none focus:bg-gray-300 focus:ring-2 focus:ring-gray-400 focus:ring-opacity-50 ring-inset" onclick="window.location.href='/';">
                                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4 h-4 inline-block align-text-top">
                                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18" />
                                             </svg>
