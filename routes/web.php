@@ -25,11 +25,10 @@ Route::post('/registersurat', [RegisterSurat::class,'store']);
 
 Route::get('/login', [LoginController::class, 'index'])->middleware('guest');
 Route::post('/login', [LoginController::class, 'authenticate']);
+Route::post('/logout', [LoginController::class, 'logout']);
 
 Route::get('/profil', function(){
     return view('profile');
 });
-Route::get('/DashboardAdmin',function(){
-    return view('admin');
-});
-Route::resource('/DashboardAdmin',PostController::class);
+Route::get('DashboardAdmin',[PostController::class,'index'])->middleware('auth');
+Route::resource('/DashboardAdmin',PostController::class)->middleware('auth');
