@@ -1,7 +1,7 @@
 @extends('components.head')
 @section('title', 'Profil Desa')
 
-<body class="bg-[url('/public/img/semboromap.png')]">
+<body class="bg-default">
     <x-header />
     <section id="profile" class="">
         <div class="container">

@@ -1,7 +1,7 @@
 @extends('components.head')
 @section('title', 'Dashboard')
 
-<body class="bg-gradient-to-r from-rose-100 to-teal-100">
+<body class="bg-default">
     <x-header />
     <section id="admin" class="pt-36">
         <div class="container">

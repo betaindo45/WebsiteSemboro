@@ -1,7 +1,7 @@
 @extends('components.head')
 @section('title', 'Login Admin')
 
-<body class="bg-[url('/public/img/semboromap.png')]">
+<body class="bg-default">
     <x-header />
     <section id="login">
         <div class="container p-12">
