@@ -32,3 +32,7 @@ Route::get('/profil', function(){
 });
 Route::get('DashboardAdmin',[PostController::class,'index'])->middleware('auth');
 Route::resource('/DashboardAdmin',PostController::class)->middleware('auth');
+
+Route::get('/success', function(){
+    return view('successpost');
+});

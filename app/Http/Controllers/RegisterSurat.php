@@ -24,6 +24,6 @@ class registersurat extends Controller
         ]);
         post::create($validatedData);
         //redirect dibenerin dengan halaman terpisah
-        return redirect('/registersurat');
+        return redirect('/success');
     }
 }
