@@ -2,7 +2,11 @@
 @section('title', 'Home')
 
 <body class="bg-[url('/public/img/semboromap.png')]">
+    @auth
+    <x-loginheader/>
+    @else
     <x-header />
+    @endauth
     <section id="home">
         <div class="container">
             <div class="flex justify-center items-center h-screen">

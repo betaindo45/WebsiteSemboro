@@ -23,7 +23,7 @@ class registersurat extends Controller
             'email'=>'email:dns'
         ]);
         post::create($validatedData);
-        $request->session()->flash('status', 'Task was successful!');
+        //redirect dibenerin dengan halaman terpisah
         return redirect('/registersurat');
     }
 }
