@@ -2,7 +2,11 @@
 @section('title', 'Profil Desa')
 
 <body class="bg-default">
-    <x-header />
+    @auth
+        <x-loginheader />
+    @else
+        <x-header />
+    @endauth
     <section id="profile" class="">
         <div class="container">
             <div class="flex flex-wrap justify-center h-screen">
