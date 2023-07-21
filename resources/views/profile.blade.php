@@ -33,11 +33,41 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="flex flex-wrap mt-10">
-                            <div class="w-full px-4 backdrop-blur-lg rounded-lg shadow-md">
-                                <h2 class="p-10 text-primary font-semibold text-3xl max-md:text-xl max-sm:text-sm text-center">Explore Semboro</h2>
-                                <div class="bg-white  overflow-hidden">
-                                    <img src="{{asset('img/pasarsemboro.jpg')}}" alt="">
+                        <div class="my-10 backdrop-blur-lg rounded-lg shadow-md">
+                            <h2
+                                class="p-5 text-primary font-semibold text-3xl max-md:text-xl max-sm:text-sm text-center">
+                                Explore Semboro</h2>
+                            <div class="w-full px-4 flex flex-wrap p-5">
+                                <div class="w-full bg-white  overflow-hidden mb-10 rounded-lg lg:w-1/2 xl:w-1/3 mx-3 p-5">
+                                    <img src="{{ asset('img/pasarsemboro.jpg') }}" alt="">
+                                    <div class="py-8 px-6">
+                                        <h3
+                                            class="text-center text-3xl block mb-3 font-semibold hover:text-primary truncate transition duration-200 cursor-default">
+                                            Pasar Semboro</h3>
+                                        <p class="font-medium text-gray-800 text-base mb-4">Pasar Semboro dikenal
+                                            sebagai pusat perdagangan dan kegiatan ekonomi yang ramai, serta menawarkan
+                                            berbagai pengalaman berbelanja yang menarik bagi para pengunjungnya.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full bg-white overflow-hidden mb-10 rounded-lg lg:w-1/2 xl:w-1/3 mx-3 p-5">
+                                    <img src="{{ asset('img/tugusemboro.jpeg') }}" alt=""/>
+                                    <div class="py-8 px-6">
+                                        <h3
+                                            class="text-center text-3xl block mb-3 font-semibold hover:text-primary truncate transition duration-200 cursor-default ">
+                                            Tugu Semboro</h3>
+                                        <p class="font-medium text-gray-800 text-base mb-4">Pasar Semboro dikenal
+                                            sebagai pusat perdagangan dan kegiatan ekonomi yang ramai, serta menawarkan
+                                            berbagai pengalaman berbelanja yang menarik bagi para pengunjungnya.</p>
+                                    </div>
+                                </div>
+                                <div class="w-full bg-white  overflow-hidden mb-10 rounded-lg lg:w-1/2 xl:w-1/3 mx-3 p-5">
+                                    <img src="{{ asset('img/lapangan.png') }}" alt="">
+                                    <div class="py-8 px-6">
+                                        <h3
+                                            class="text-center text-3xl block mb-3 font-semibold hover:text-primary truncate transition duration-200 cursor-default">
+                                            Lapangan Desa Semboro</h3>
+                                        <p class="font-medium text-gray-800 text-base mb-4">Lapangan Semboro berada di sebelah Balai Desa Semboro, lapangan ini sangatlah luas dan biasa digunakan oleh warga setempat untuk melakukan berbagai aktivitas mulai dari jalan santai, berolahraga, maupun untuk latihan berkendara.</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
