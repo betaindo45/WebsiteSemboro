@@ -2,7 +2,11 @@
 @section('title', 'Permintaan Surat')
 
 <body class="bg-default">
-    <x-header />
+    @auth
+        <x-loginheader />
+    @else
+        <x-header />
+    @endauth
     <section id="form" class="pt-12">
         <div class="container p-10 bg-slate-500/30 backdrop-blur-lg rounded-md justify-center items-center my-12">
             <div class="flex flex-wrap m-10">
