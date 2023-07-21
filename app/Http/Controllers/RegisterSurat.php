@@ -20,10 +20,10 @@ class registersurat extends Controller
             'keperluan'=>'required',
             'keterangan'=>'required',
             'nohp'=>'required',
-            'email'=>'email:dns'
+            'email'=>'email:dns|nullable'
         ]);
         post::create($validatedData);
-        $request->session()->flash('status', 'Task was successful!');
-        return redirect('/registersurat');
+        //redirect dibenerin dengan halaman terpisah
+        return redirect('/success');
     }
 }

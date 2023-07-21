@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('kk',50);
             $table->text('keperluan');
             $table->text('keterangan');
+            $table->boolean('status')->default(false);
             $table->text('nohp');
             $table->text('email')->nullable();
             $table->timestamps();

@@ -12,9 +12,10 @@ class PostController extends Controller
      */
     public function index()
     {
-        return view('posts',[
-            "posts" => post::all()
+        return view('admin',[
+            'posts' => post::all()
         ]);
+
         //
     }
 
@@ -24,6 +25,7 @@ class PostController extends Controller
     public function create()
     {
         //
+
     }
 
     /**
@@ -37,10 +39,12 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show(post $post)
+    public function show($id)
     {
-        //
-
+        $post = post::findOrFail($id);
+        return view('show',[
+            'posts'=>$post
+        ]);
     }
 
     /**
@@ -62,8 +66,12 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(post $post)
+    public function destroy($id)
     {
         //
+        $post = post::findOrFail($id);
+        $post->delete();
+        //redirect dibenerin dengan halaman terpisah
+        return redirect('/DashboardAdmin/view');
     }
 }
