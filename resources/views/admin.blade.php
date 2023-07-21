@@ -3,9 +3,9 @@
 
 <body class="bg-default">
     @auth
-    <x-loginheader/>
+        <x-loginheader />
     @else
-    <x-header />
+        <x-header />
     @endauth
     <section id="admin" class="pt-36">
         <div class="container">
@@ -22,24 +22,37 @@
                         </tr>
                     </thead>
                     <tbody class="bg-yellow-300">
-                        @forEach ($posts as $post)
-                        <tr>
-                            <td class="text-center p-1">{{ $loop->iteration }}</td>
-                            <td>{{ $post->name }}</td>
-                            <td>{{ $post->nik }}</td>
-                            <td>{{ $post->keperluan }}</td>
-                            <td>
-                                @if($post->status===0)
-                                    Belum Disetujui
-                                @else
-                                    Sudah Disetujui
-                                @endif
-                            </td>
-                            <td>{{ $loop->iteration }}</td>
-                        </tr>
+                        @foreach ($posts as $post)
+                            <tr>
+                                <td class="text-center p-1">{{ $loop->iteration }}</td>
+                                <td>{{ $post->name }}</td>
+                                <td>{{ $post->nik }}</td>
+                                <td>{{ $post->keperluan }}</td>
+                                <td>
+                                    @if ($post->status === 0)
+                                        Belum Disetujui
+                                    @else
+                                        Sudah Disetujui
+                                    @endif
+                                </td>
+                                <td class="justify-center items-center flex p-2">
+                                    <form action="/DashboardAdmin/view/{{ $post->id }}" method="post">
+                                        @method('delete')
+                                        @csrf
+                                        <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mx-2 mt-4 rounded border-0" onclick="return confirm('Apakah Anda Yakin?')">
+                                            <a href="">Delete</a>
+                                        </button>
+                                    </form>
+
+                                    <button
+                                        class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 mx-2 rounded">
+                                        <a href="/DashboardAdmin/view/{{ $post->id }}">View </a>
+                                    </button>
+                                </td>
+                            </tr>
                         @endforeach
                     </tbody>
-              </table>  
+                </table>
             </div>
         </div>
     </section>
