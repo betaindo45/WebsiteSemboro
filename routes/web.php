@@ -30,8 +30,10 @@ Route::post('/logout', [LoginController::class, 'logout']);
 Route::get('/profil', function(){
     return view('profile');
 });
-Route::get('DashboardAdmin',[PostController::class,'index'])->middleware('auth');
-Route::resource('/DashboardAdmin',PostController::class)->middleware('auth');
+Route::get('/DashboardAdmin',function(){
+    return view('index');
+})->middleware('auth');
+Route::resource('/DashboardAdmin/view',PostController::class)->middleware('auth');
 
 Route::get('/success', function(){
     return view('successpost');
