@@ -34,3 +34,7 @@ Route::get('/DashboardAdmin',function(){
     return view('index');
 })->middleware('auth');
 Route::resource('/DashboardAdmin/view',PostController::class)->middleware('auth');
+
+Route::get('/success', function(){
+    return view('successpost');
+});
