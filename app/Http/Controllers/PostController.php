@@ -39,11 +39,11 @@ class PostController extends Controller
     /**
      * Display the specified resource.
      */
-    public function show($id)
+    public function show(post $view)
     {
-        $post = post::findOrFail($id);
+
         return view('show',[
-            'posts'=>$post
+            'posts'=>$view
         ]);
     }
 
@@ -66,11 +66,10 @@ class PostController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy($id)
+    public function destroy(post $view)
     {
         //
-        $post = post::findOrFail($id);
-        $post->delete();
+        post::destroy($view->id);
         //redirect dibenerin dengan halaman terpisah
         return redirect('/DashboardAdmin/view');
     }
