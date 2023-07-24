@@ -37,10 +37,10 @@
                                 </td>
                                 <td class="justify-center items-center flex p-2">
                                     <form action="/DashboardAdmin/view/{{ $post->id }}" method="post">
-                                        @method('delete')
                                         @csrf
+                                        @method('delete')
                                         <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 mx-2 mt-4 rounded border-0" onclick="return confirm('Apakah Anda Yakin?')">
-                                            <a href="">Delete</a>
+                                            Delete
                                         </button>
                                     </form>
 
