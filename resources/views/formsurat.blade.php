@@ -36,6 +36,10 @@
                         @error('nik')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
+                        <label for="imagenik" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Upload Kartu Tanda Penduduk (KTP)<span class="text-red-600 text-2xl">*</span></label>
+                        <input id="imagenik" type="file" name="imagenik" placeholder=""
+                            class="@error('nik') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required value="{{ old('nik') }}" />
                         <label for="kk" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Nomor
                             Kartu Keluarga (KK)<span class="text-red-600 text-2xl">*</span></label>
                         <input id="kk" type="text" name="kk" placeholder=""
@@ -44,6 +48,10 @@
                         @error('nokk')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
+                        <label for="imagekk" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Upload Kartu Keluarga (KK)<span class="text-red-600 text-2xl">*</span></label>
+                        <input id="imagekk" type="file" name="imagekk" placeholder=""
+                            class="@error('nik') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required value="{{ old('nik') }}" />
                         <label for="keperluan"
                             class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Keperluan Surat<span
                                 class="text-red-600 text-2xl">*</span></label>
