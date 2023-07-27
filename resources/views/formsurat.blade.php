@@ -15,8 +15,8 @@
                         PERMOHONAN SURAT</h1>
                 </div>
             </div>
-            <div class="grid min-h-screen place-items-center -bottom-10 p-0 m-12">
-                <div class="w-auto p-12 bg-white rounded-lg">
+            <div class="grid min-h-screen place-items-center -bottom-10 p-0 m-12 max-md:m-0.5">
+                <div class="w-auto p-12 bg-white rounded-lg max-md:p-5">
                     <h1 class="text-xl font-semibold">Tolong isi informasi anda dibawah untuk melakukan pengajuan</h1>
                     <form action="/registersurat" method="post" class="mt-6">
                         @csrf
@@ -55,9 +55,26 @@
                         <label for="keperluan"
                             class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Keperluan Surat<span
                                 class="text-red-600 text-2xl">*</span></label>
-                        <input id="keperluan" type="text" name="keperluan" placeholder="Surat Izin"
-                            class="@error('keperluan') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
-                            required value="{{ old('keperluan') }}" />
+                        <select name="keperluan" id="keperluan" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg" required>
+                            <option value="" disabled selected hidden>Pilih Salah Satu</option>
+                            <option value="Surat Keterangan Kepemilikan Kendaraan Bermotor">Surat Keterangan Kepemilikan Kendaraan Bermotor</option>
+                            <option value="Surat Keterangan Penghasilan">Surat Keterangan Penghasilan</option>
+                            <option value="Surat Keterangan Miskin">Surat Keterangan Miskin</option>
+                            <option value="Surat Keterangan Tidak Mampu">Surat Keterangan Tidak Mampu</option>
+                            <option value="Surat Keterangan Tidak Memiliki Rumah">Surat Keterangan Tidak Memiliki Rumah</option>
+                            <option value="Surat Keterangan Beda Identitas">Surat Keterangan Beda Identitas</option>
+                            <option value="Surat Keterangan Organisasi Terlarang">Surat Keterangan Organisasi Terlarang (OT)</option>
+                            <option value="Surat Keterangan Domisili Lembaga">Surat Keterangan Domisili Lembaga</option>
+                            <option value="Surat Keterangan Domisili/Tempat Tinggal">Surat Keterangan Domisili/Tempat Tinggal</option>
+                            <option value="Surat Keterangan Pindah Tempat Tinggal">Surat Keterangan Pindah Tempat Tinggal</option>
+                            <option value="Surat Keterangan Belum Pernah Nikah">Surat Keterangan Belum Pernah Nikah</option>
+                            <option value="Surat Keterangan Janda-Duda">Surat Keterangan Janda Duda</option>
+                            <option value="Surat Keterangan Kenal Lahir">Surat Keterangan Kenal Lahir</option>
+                            <option value="Surat Keterangan Kematian">Surat Keterangan Kematian</option>
+                            <option value="Surat Keterangan Usaha">Surat Keterangan Usaha</option>
+                            <option value="Surat Keterangan Kepemilikan Tanah">Surat Keterangan Kepemilikan Tanah</option>
+                            <option value="Surat Keterangan Lain-Lain (Umum)">Surat Keterangan Lain-Lain (Umum)</option>
+                        </select>
                         @error('keperluan')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror

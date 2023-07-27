@@ -64,7 +64,7 @@
                                             berbagai pengalaman berbelanja yang menarik bagi para pengunjungnya.</p>
                                     </div>
                                 </div>
-                                <div class="w-full bg-white  overflow-hidden mb-10 rounded-lg lg:w-1/2 xl:w-1/3 mx-1 p-5">
+                                <div class="w-full bg-white  overflow-hidden mb-10 rounded-lg lg:w-1/2 xl:w-1/3  mx-1 p-5">
                                     <img src="{{ asset('img/lapangan.png') }}" alt="">
                                     <div class="py-8 px-6">
                                         <h3
