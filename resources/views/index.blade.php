@@ -22,7 +22,7 @@
                         <a href="/profil"
                             class="text-lg font-semibold text-white bg-primary py-3 px-8 rounded-md hover:shadow-2xl hover:bg-hover hover:text-teal-950 transition duration-500 ease-in-out max-md:text-xs max-md:px-3">Profil
                             Desa</a>
-                        <a href="/surat"
+                        <a href="/registersurat"
                             class="text-lg font-semibold text-white bg-primary py-3 px-8 rounded-md hover:shadow-2xl hover:bg-hover hover:text-teal-950 transition duration-500 ease-in-out max-md:text-xs max-md:px-3">Pengajuan
                             Surat </a>
                     </div>
