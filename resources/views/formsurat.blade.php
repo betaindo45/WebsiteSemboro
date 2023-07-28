@@ -18,7 +18,8 @@
             <div class="grid min-h-screen place-items-center -bottom-10 p-0 m-12 max-md:m-0.5">
                 <div class="w-auto p-12 bg-white rounded-lg max-md:p-5">
                     <h1 class="text-xl font-semibold">Tolong isi informasi anda dibawah untuk melakukan pengajuan</h1>
-                    <form action="/registersurat" method="post" class="mt-6" enctype="multipart/form-data">
+                    <form action="/registersurat" method="post" class="mt-6" enctype="multipart/form-data"
+                        id="surat">
                         @csrf
                         <label for="name" class="block text-xs font-semibold text-gray-600 uppercase">Nama<span
                                 class="text-red-600 text-2xl">*</span></label>
@@ -132,8 +133,7 @@
                             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
                             required>
                             <option value="" disabled selected hidden>Pilih Salah Satu</option>
-                            <option value="Surat Keterangan Kepemilikan Kendaraan Bermotor">Surat Keterangan
-                                Kepemilikan
+                            <option value="Surat Keterangan Kepemilikan Kendaraan Bermotor">Surat Keterangan Kepemilikan
                                 Kendaraan Bermotor</option>
                             <option value="Surat Keterangan Penghasilan">Surat Keterangan Penghasilan</option>
                             <option value="Surat Keterangan Miskin">Surat Keterangan Miskin</option>
@@ -143,8 +143,7 @@
                             <option value="Surat Keterangan Beda Identitas">Surat Keterangan Beda Identitas</option>
                             <option value="Surat Keterangan Organisasi Terlarang">Surat Keterangan Organisasi Terlarang
                                 (OT)</option>
-                            <option value="Surat Keterangan Domisili Lembaga">Surat Keterangan Domisili Lembaga
-                            </option>
+                            <option value="Surat Keterangan Domisili Lembaga">Surat Keterangan Domisili Lembaga</option>
                             <option value="Surat Keterangan Domisili/Tempat Tinggal">Surat Keterangan Domisili/Tempat
                                 Tinggal</option>
                             <option value="Surat Keterangan Pindah Tempat Tinggal">Surat Keterangan Pindah Tempat
@@ -157,12 +156,15 @@
                             <option value="Surat Keterangan Usaha">Surat Keterangan Usaha</option>
                             <option value="Surat Keterangan Kepemilikan Tanah">Surat Keterangan Kepemilikan Tanah
                             </option>
-                            <option value="Surat Keterangan Lain-Lain (Umum)">Surat Keterangan Lain-Lain (Umum)
-                            </option>
+                            <option value="Surat Keterangan Lain-Lain (Umum)">Surat Keterangan Lain-Lain (Umum)</option>
                         </select>
                         @error('keperluan')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
+
+                        <div id="dynamic-form">
+
+                        </div>
 
 
                         <label for="keterangan"
@@ -212,4 +214,79 @@
                 </div>
             </div>
     </section>
+    <script>
+        const selectOption = document.getElementById("keperluan");
+        const dynamicInputContainer = document.getElementById("dynamic-form");
+        const dynamicForm = document.getElementById("surat");
+
+        selectOption.addEventListener("change", handleOptionChange);
+
+        function handleOptionChange() {
+            // Clear previous dynamic input fields
+            dynamicInputContainer.innerHTML = '';
+
+            // Check the selected option and create dynamic input field accordingly
+            if (selectOption.value === 'Surat Keterangan Pindah Tempat Tinggal') {
+                createRequiredInput('alamatTujuan', 'Alamat Tujuan');
+            }
+        }
+
+        function createRequiredInput(inputName, label) {
+            const inputElement = document.createElement('input');
+            inputElement.type = 'text';
+            inputElement.name = 'alamattujuan';
+            inputElement.id = 'alamaattujuan';
+            inputElement.className =
+                'block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg';
+            inputElement.placeholder = label;
+            inputElement.required = true;
+            inputElement.value = "{{ old('alamattujuan') }}";
+
+            const inputElement2 = document.createElement('input');
+            inputElement2.type = 'string';
+            inputElement2.name = 'desa';
+            inputElement2.id = 'desa';
+            inputElement2.className =
+                'block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg';
+            inputElement2.placeholder = 'Desa/Kelurahan';
+            inputElement2.required = true;
+            inputElement2.value = "{{ old('desa') }}";
+
+            const inputElement3 = document.createElement('input');
+            inputElement3.type = 'string';
+            inputElement3.name = 'kecamatan';
+            inputElement3.id = 'kecamatan';
+            inputElement3.className =
+                'block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg';
+            inputElement3.placeholder = 'Kecamatan';
+            inputElement3.required = true;
+            inputElement3.value = "{{ old('kecamatan') }}";
+
+            const inputElement4 = document.createElement('input');
+            inputElement4.type = 'string';
+            inputElement4.name = 'kota';
+            inputElement4.id = 'kota';
+            inputElement4.className =
+                'block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg';
+            inputElement4.placeholder = 'Kota/Kabupaten';
+            inputElement4.required = true;
+            inputElement4.value = "{{ old('kota') }}";
+
+            const inputElement5 = document.createElement('input');
+            inputElement5.type = 'text';
+            inputElement5.name = 'pengikut';
+            inputElement5.id = 'Pengikut';
+            inputElement5.className =
+                'block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg';
+            inputElement5.placeholder = 'Pengikut';
+            inputElement5.required = true;
+            inputElement5.value = "{{ old('pengikut') }}";
+
+            dynamicInputContainer.appendChild(inputElement);
+            dynamicInputContainer.appendChild(inputElement2);
+            dynamicInputContainer.appendChild(inputElement3);
+            dynamicInputContainer.appendChild(inputElement4);
+            dynamicInputContainer.appendChild(inputElement5);
+        }
+    </script>
 </body>
