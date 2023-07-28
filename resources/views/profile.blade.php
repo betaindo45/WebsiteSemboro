@@ -12,9 +12,9 @@
             <div class="flex flex-wrap justify-center h-screen">
                 <section id="profil">
                     <div class="container">
-                        <div class="w-full max-sm:m-1">
+                        <div class="w-full">
                             <div class="mx-auto text-center bg-slate-500/30 rounded-md backdrop-blur-lg">
-                                <div class="w-auto p-10 mt-24 max-sm:p-0 max-sm:m-0">
+                                <div class="w-auto p-10 mt-24">
                                     <h2 class="font-semibold text-3xl text-primary max-md:text-xl max-sm:text-sm mb-10">
                                         Profil Desa Semboro
                                     </h2>
