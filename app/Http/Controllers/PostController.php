@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\post;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class PostController extends Controller
 {
@@ -69,6 +70,12 @@ class PostController extends Controller
     public function destroy(post $view)
     {
         //
+        if($view->imagenik){
+            Storage::delete($view->imagenik);
+        }
+        if($view->imagekk){
+            Storage::delete($view->imagekk);
+        }
         post::destroy($view->id);
         //redirect dibenerin dengan halaman terpisah
         return redirect('/DashboardAdmin/view');
