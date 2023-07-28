@@ -10,7 +10,7 @@
     <section id="admin" class="pt-36">
         <div class="container">
             <div class="flex flex-wrap">
-                <table class="w-full table-auto border-spacing-2">
+                <table class="w-full table-auto border-spacing-2 mb-32">
                     <thead class="border-b-1 bg-orange-600">
                         <tr>
                             <th class=" text-white text-md font-bold tracking-wide py-2 rounded-s-md">NO</th>
