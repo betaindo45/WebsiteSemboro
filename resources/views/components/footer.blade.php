@@ -9,7 +9,7 @@
                 <p>Kabupaten Jember</p>
                 <p>68157</p>
             </div>
-            <div class="w-full px-4 mb-6 text-slate-600 font-medium md:w-1/3">
+            <div class="w-full px-4 mb-6 text-slate-600 font-medium md:w-1/3 text-center">
                 <h3 class="font-bold text-4xl mb-5 text-white">Pengembang:</h3>
                 <ul class="inline-block text-lg font-semibold">
                     <li>
@@ -20,7 +20,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="w-full px-4 mb-6 text-slate-600 font-medium md:w-1/3">
+            <div class="w-full px-4 mb-6 text-slate-600 font-medium md:w-1/3 text-right">
                 <h3 class="font-bold text-4xl mb-5 text-white">Fitur Web:</h3>
                 <ul class="inline-block text-lg font-semibold">
                     <li>
@@ -34,10 +34,10 @@
                     </li>
                 </ul>
             </div>
-            <div class="w-full pt-5 border-t border-slate-800 text-center font-semibold text-amber-950">
-                <div class="flex flex-wrap justify-center items-center">
+            <div class="w-full border-t border-slate-800 text-center font-semibold text-amber-950">
+                <div class="flex flex-wrap justify-center items-center my-1">
                     <img src="{{ asset('img/logommd.png') }}" alt="" class="h-auto m-5" style="width: 100px">
-                <img src="{{ asset('img/logoub.png') }}" alt="" class="h-auto m-5" style="width: 100px">
+                    <img src="{{ asset('img/logoub.png') }}" alt="" class="h-auto m-5" style="width: 100px">
                 </div>
                 <h3>Dibuat Sebagai Salah Satu Program Mahasiswa Membangun Desa</h3>
                 <h3>Universitas Brawijaya</h3>
