@@ -14,13 +14,23 @@ return new class extends Migration
         Schema::create('posts', function (Blueprint $table) {
             $table->id();
             $table->string('name', 200);
+            $table->string('kelamin', 50);
             $table->string('nik', 50);
+            $table->string('ttl', 200);
+            $table->string('pekerjaan', 50);
+            $table->text('alamat');
             $table->string('kk',50);
             $table->text('keperluan');
             $table->text('keterangan');
             $table->boolean('status')->default(false);
             $table->text('nohp');
             $table->text('email')->nullable();
+            //Pindah Alamat
+            $table->text('alamattujuan')->nullable();
+            $table->string('desa',50)->nullable();
+            $table->string('kecamatan',50)->nullable();
+            $table->string('kota',50)->nullable();
+            $table->text('pengikut')->nullable();
             $table->timestamps();
         });
     }

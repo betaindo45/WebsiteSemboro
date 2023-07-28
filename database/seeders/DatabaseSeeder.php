@@ -35,35 +35,5 @@ class DatabaseSeeder extends Seeder
             'password'=>bcrypt('PGsemboroJemberMandiri23Ac'),
             'is_admin'=> true
         ]);
-        post::create([
-            'name'=>'adminsemboro3',
-            'nik'=>'21515',
-            'kk'=> '21515',
-            'keperluan'=>'Keperluan Nikah',
-            'keterangan'=>'asd',
-            'status'=>false,
-            'nohp'=>'2151251',
-            'email'=>'d@gmail.com'
-        ]);
-        post::create([
-            'name'=>'budi',
-            'nik'=>'21515',
-            'kk'=> '21515',
-            'keperluan'=>'Keperluan Nikah',
-            'keterangan'=>'asd',
-            'status'=>false,
-            'nohp'=>'2151251',
-            'email'=>'d@gmail.com'
-        ]);
-        post::create([
-            'name'=>'siti',
-            'nik'=>'21515',
-            'kk'=> '21515',
-            'keperluan'=>'Keperluan Nikah',
-            'keterangan'=>'asd',
-            'status'=>false,
-            'nohp'=>'2151251',
-            'email'=>'d@gmail.com'
-        ]);
     }
 }
