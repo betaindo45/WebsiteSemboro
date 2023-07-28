@@ -28,62 +28,137 @@
                         @error('name')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
-                        
+
+
+                        <label for="kelamin" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Jenis
+                            Kelamin<span class="text-red-600 text-2xl">*</span></label>
+                        <select name="kelamin" id="kelamin"
+                            class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required>
+                            <option value="" disabled selected hidden>Pilih Salah Satu</option>
+                            <option value="Laki Laki">Laki Laki</option>
+                            <option value="Perempuan">Perempuan</option>
+                        </select>
+                        @error('kelamin')
+                            <div class="alert alert-danger"> {{ $message }} </div>
+                        @enderror
+
+
+                        <label for="agama"
+                            class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Agama<span
+                                class="text-red-600 text-2xl">*</span></label>
+                        <input id="agama" type="text" name="agama" placeholder="" autocomplete="given-name"
+                            class="@error('name') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required value="{{ old('agama') }}" />
+                        @error('agama')
+                            <div class="alert alert-danger"> {{ $message }} </div>
+                        @enderror
+
 
                         <label for="nik" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Nomor
                             Induk Kependudukan (NIK)<span class="text-red-600 text-2xl">*</span></label>
                         <input id="nik" type="text" name="nik" placeholder=""
                             class="@error('nik') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
-                            required value="{{ old('nik') }}" />
+                            required="{16}" value="{{ old('nik') }}" />
                         @error('nik')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
 
 
-                        <label for="imagenik" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Upload Kartu Tanda Penduduk (KTP)<span class="text-red-600 text-2xl">*</span></label>
+                        <label for="imagenik" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Upload
+                            Kartu Tanda Penduduk (KTP)<span class="text-red-600 text-2xl">*</span></label>
                         <input id="imagenik" type="file" name="imagenik" placeholder=""
-                            class="@error('nik') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
-                            required value="{{ old('nik') }}" />
+                            class="@error('imagenik') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required/>
+                        @error('imagenik')
+                            <div class="alert alert-danger"> {{ $message }} </div>
+                        @enderror
+
+                        <label for="ttl" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Tempat
+                            Tanggal Lahir (TTL)<span class="text-red-600 text-2xl">*</span></label>
+                        <input id="ttl" type="text" name="ttl" placeholder="Jember, 1 Januari 2022"
+                            class="@error('ttl') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required value="{{ old('ttl') }}" />
+                        @error('ttl')
+                            <div class="alert alert-danger"> {{ $message }} </div>
+                        @enderror
+
+
+                        <label for="pekerjaan"
+                            class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Pekerjaan<span
+                                class="text-red-600 text-2xl">*</span></label>
+                        <input id="pekerjaan" type="text" name="pekerjaan" placeholder=""
+                            class="@error('pekerjaan') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required value="{{ old('pekerjaan') }}" />
+                        @error('pekerjaan')
+                            <div class="alert alert-danger"> {{ $message }} </div>
+                        @enderror
+
+
+                        <label for="alamat"
+                            class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Alamat<span
+                                class="text-red-600 text-2xl">*</span></label>
+                        <input id="alamat" type="text" name="alamat" placeholder=""
+                            class="@error('alamat') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required value="{{ old('alamat') }}" />
+                        @error('alamat')
+                            <div class="alert alert-danger"> {{ $message }} </div>
+                        @enderror
 
 
                         <label for="kk" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Nomor
                             Kartu Keluarga (KK)<span class="text-red-600 text-2xl">*</span></label>
                         <input id="kk" type="text" name="kk" placeholder=""
                             class="@error('kk') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
-                            required value="{{ old('kk') }}" />
-                        @error('nokk')
+                            required="{16}" value="{{ old('kk') }}" />
+                        @error('kk')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
 
 
-                        <label for="imagekk" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Upload Kartu Keluarga (KK)<span class="text-red-600 text-2xl">*</span></label>
+                        <label for="imagekk" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Upload
+                            Kartu Keluarga (KK)<span class="text-red-600 text-2xl">*</span></label>
                         <input id="imagekk" type="file" name="imagekk" placeholder=""
-                            class="@error('nik') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
-                            required value="{{ old('nik') }}" />
+                            class="@error('imagekk') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required/>
+                        @error('imagekk')
+                            <div class="alert alert-danger"> {{ $message }} </div>
+                        @enderror
 
-                            
                         <label for="keperluan"
                             class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Keperluan Surat<span
                                 class="text-red-600 text-2xl">*</span></label>
-                        <select name="keperluan" id="keperluan" class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg" required>
+                        <select name="keperluan" id="keperluan"
+                            class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required>
                             <option value="" disabled selected hidden>Pilih Salah Satu</option>
-                            <option value="Surat Keterangan Kepemilikan Kendaraan Bermotor">Surat Keterangan Kepemilikan Kendaraan Bermotor</option>
+                            <option value="Surat Keterangan Kepemilikan Kendaraan Bermotor">Surat Keterangan
+                                Kepemilikan
+                                Kendaraan Bermotor</option>
                             <option value="Surat Keterangan Penghasilan">Surat Keterangan Penghasilan</option>
                             <option value="Surat Keterangan Miskin">Surat Keterangan Miskin</option>
                             <option value="Surat Keterangan Tidak Mampu">Surat Keterangan Tidak Mampu</option>
-                            <option value="Surat Keterangan Tidak Memiliki Rumah">Surat Keterangan Tidak Memiliki Rumah</option>
+                            <option value="Surat Keterangan Tidak Memiliki Rumah">Surat Keterangan Tidak Memiliki Rumah
+                            </option>
                             <option value="Surat Keterangan Beda Identitas">Surat Keterangan Beda Identitas</option>
-                            <option value="Surat Keterangan Organisasi Terlarang">Surat Keterangan Organisasi Terlarang (OT)</option>
-                            <option value="Surat Keterangan Domisili Lembaga">Surat Keterangan Domisili Lembaga</option>
-                            <option value="Surat Keterangan Domisili/Tempat Tinggal">Surat Keterangan Domisili/Tempat Tinggal</option>
-                            <option value="Surat Keterangan Pindah Tempat Tinggal">Surat Keterangan Pindah Tempat Tinggal</option>
-                            <option value="Surat Keterangan Belum Pernah Nikah">Surat Keterangan Belum Pernah Nikah</option>
+                            <option value="Surat Keterangan Organisasi Terlarang">Surat Keterangan Organisasi Terlarang
+                                (OT)</option>
+                            <option value="Surat Keterangan Domisili Lembaga">Surat Keterangan Domisili Lembaga
+                            </option>
+                            <option value="Surat Keterangan Domisili/Tempat Tinggal">Surat Keterangan Domisili/Tempat
+                                Tinggal</option>
+                            <option value="Surat Keterangan Pindah Tempat Tinggal">Surat Keterangan Pindah Tempat
+                                Tinggal</option>
+                            <option value="Surat Keterangan Belum Pernah Nikah">Surat Keterangan Belum Pernah Nikah
+                            </option>
                             <option value="Surat Keterangan Janda-Duda">Surat Keterangan Janda Duda</option>
                             <option value="Surat Keterangan Kenal Lahir">Surat Keterangan Kenal Lahir</option>
                             <option value="Surat Keterangan Kematian">Surat Keterangan Kematian</option>
                             <option value="Surat Keterangan Usaha">Surat Keterangan Usaha</option>
-                            <option value="Surat Keterangan Kepemilikan Tanah">Surat Keterangan Kepemilikan Tanah</option>
-                            <option value="Surat Keterangan Lain-Lain (Umum)">Surat Keterangan Lain-Lain (Umum)</option>
+                            <option value="Surat Keterangan Kepemilikan Tanah">Surat Keterangan Kepemilikan Tanah
+                            </option>
+                            <option value="Surat Keterangan Lain-Lain (Umum)">Surat Keterangan Lain-Lain (Umum)
+                            </option>
                         </select>
                         @error('keperluan')
                             <div class="alert alert-danger"> {{ $message }} </div>
@@ -114,6 +189,20 @@
                         @error('email')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
+
+
+                        <label for="cetak" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Penerimaan Surat<span class="text-red-600 text-2xl">*</span></label>
+                        <select name="cetak" id="cetak"
+                            class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required>
+                            <option value="" disabled selected hidden>Pilih Salah Satu</option>
+                            <option value="Diambil di Balai Desa">Diambil di Balai Desa</option>
+                            <option value="Kirim File PDF VIA WA">Kirim File PDF VIA WA</option>
+                        </select>
+                        @error('cetak')
+                            <div class="alert alert-danger"> {{ $message }} </div>
+                        @enderror
+
                         <button type="submit"
                             class="w-full py-3 mt-6 font-medium tracking-widest text-white uppercase bg-black shadow-lg focus:outline-none hover:bg-gray-900 hover:shadow-none rounded-lg">
                             Kirim Pengajuan

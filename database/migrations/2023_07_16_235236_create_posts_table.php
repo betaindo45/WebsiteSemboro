@@ -28,7 +28,7 @@ return new class extends Migration
             $table->boolean('status')->default(false);
             $table->text('nohp');
             $table->text('email')->nullable();
-            $table->string('Cetak', 50);
+            $table->string('cetak', 50);
             //Pindah Alamat
             $table->text('alamattujuan')->nullable();
             $table->string('desa',50)->nullable();

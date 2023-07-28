@@ -12,22 +12,18 @@ class registersurat extends Controller
         return view('formsurat');
     }
     public function store(Request $request){
-
-        $triming = $request->nohp
-        if($request->nohp.){
-
-        }
-
         if($request->keperluan=="Surat Keterangan Pindah Tempat Tinggal"){
             $validatedData = $request->validate([
                 'name'=>'required|max:255',
                 'kelamin'=>'required',
                 'agama'=>'required',
-                'nik'=>'required|max:16',
+                'nik'=>'required|max:16|min:16',
+                'imagenik'=>'mimes:jpg,png,jpeg,pdf|file|max:5120',
                 'ttl'=>'required',
                 'pekerjaan'=>'required',
                 'alamat'=>'required',
-                'kk'=>'required|max:16',
+                'kk'=>'required|max:16|min:16',
+                'imagekk'=>'mimes:jpg,png,jpeg,pdf|file|max:5120',
                 'keperluan'=>'required',
                 'keterangan'=>'required',
                 'nohp'=>'required',
@@ -46,11 +42,13 @@ class registersurat extends Controller
                 'name'=>'required|max:255',
                 'kelamin'=>'required',
                 'agama'=>'required',
-                'nik'=>'required|max:16',
+                'nik'=>'required|max:16|min:16',
+                'imagenik'=>'mimes:jpg,png,jpeg,pdf|file|max:5120',
                 'ttl'=>'required',
                 'pekerjaan'=>'required',
                 'alamat'=>'required',
-                'kk'=>'required|max:16',
+                'kk'=>'required|max:16|min:16',
+                'imagekk'=>'mimes:jpg,png,jpeg,pdf|file|max:5120',
                 'keperluan'=>'required',
                 'keterangan'=>'required',
                 'nohp'=>'required',
@@ -58,6 +56,9 @@ class registersurat extends Controller
                 'cetak'=>'required'
             ]); 
         }
+
+        $validatedData['imagenik']=$request->file('imagenik')->store('ktp');
+        $validatedData['imagekk']=$request->file('imagekk')->store('kk');
         post::create($validatedData);
         //redirect dibenerin dengan halaman terpisah
         return redirect('/success');
