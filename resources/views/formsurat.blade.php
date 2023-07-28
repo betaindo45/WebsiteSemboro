@@ -214,6 +214,7 @@
                 </div>
             </div>
     </section>
+    <x-footer />
     <script>
         const selectOption = document.getElementById("keperluan");
         const dynamicInputContainer = document.getElementById("dynamic-form");
