@@ -15,16 +15,20 @@ return new class extends Migration
             $table->id();
             $table->string('name', 200);
             $table->string('kelamin', 50);
+            $table->string('agama', 50);
             $table->string('nik', 50);
+            $table->string('imagenik');
             $table->string('ttl', 200);
-            $table->string('pekerjaan', 50);
+            $table->text('pekerjaan');
             $table->text('alamat');
             $table->string('kk',50);
+            $table->string('imagekk');
             $table->text('keperluan');
             $table->text('keterangan');
             $table->boolean('status')->default(false);
             $table->text('nohp');
             $table->text('email')->nullable();
+            $table->string('Cetak', 50);
             //Pindah Alamat
             $table->text('alamattujuan')->nullable();
             $table->string('desa',50)->nullable();

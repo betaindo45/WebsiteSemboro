@@ -13,16 +13,27 @@ class registersurat extends Controller
     }
     public function store(Request $request){
 
+        $triming = $request->nohp
+        if($request->nohp.){
+
+        }
 
         if($request->keperluan=="Surat Keterangan Pindah Tempat Tinggal"){
             $validatedData = $request->validate([
                 'name'=>'required|max:255',
+                'kelamin'=>'required',
+                'agama'=>'required',
                 'nik'=>'required|max:16',
+                'ttl'=>'required',
+                'pekerjaan'=>'required',
+                'alamat'=>'required',
                 'kk'=>'required|max:16',
                 'keperluan'=>'required',
                 'keterangan'=>'required',
                 'nohp'=>'required',
                 'email'=>'email:dns|nullable',
+                'cetak'=>'required',
+
                 'alamattujuan'=>'required',
                 'desa'=>'required',
                 'kecamatan'=>'required',
@@ -33,12 +44,18 @@ class registersurat extends Controller
         else{
             $validatedData = $request->validate([
                 'name'=>'required|max:255',
+                'kelamin'=>'required',
+                'agama'=>'required',
                 'nik'=>'required|max:16',
+                'ttl'=>'required',
+                'pekerjaan'=>'required',
+                'alamat'=>'required',
                 'kk'=>'required|max:16',
                 'keperluan'=>'required',
                 'keterangan'=>'required',
                 'nohp'=>'required',
-                'email'=>'email:dns|nullable'
+                'email'=>'email:dns|nullable',
+                'cetak'=>'required'
             ]); 
         }
         post::create($validatedData);
