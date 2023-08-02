@@ -13,11 +13,11 @@
                 <table
                     class="mb-36 border-separate border-spacing-2 w-full border border-slate-400 bg-white/30 backdrop-blur-lg shadow-sm p-5 rounded-lg text-left">
                     <h2 class="text-center font-semibold text-4xl text-primary">Detail Surat</h2>
-                    <tbody class="bg-white rounded-lg">
+                    <tbody class="bg-white">
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Nama</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
                                 {{ $posts->name }}</td>
                             <td class="text-center">
                                 <button>
@@ -28,24 +28,24 @@
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Jenis Kelamin</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
                                 {{ $posts->name }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Agama</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
                                 {{ $posts->agama }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
@@ -62,68 +62,68 @@
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Tempat, Tanggal Lahir</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
                                 {{ $posts->name }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Pekerjaan</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
                                 {{ $posts->name }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Alamat</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
                                 {{ $posts->name }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 KK</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->kk }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 Keperluan</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->keperluan }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 Keterangan</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->keterangan }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
@@ -142,29 +142,74 @@
                                 No HP</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->nohp }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 Email</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->email }}</td>
-                                <td class="text-center">
-                                    <button>
-                                        <i class="fa-regular fa-clipboard"></i>
-                                    </button>
-                                </td>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
+                                </button>
+                            </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Penerimaan Surat</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
                                 {{ $posts->name }}</td>
-                                <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table class="mb-36 border-separate border-spacing-2 w-full border border-slate-400 bg-white/30 backdrop-blur-lg shadow-sm p-5 rounded-lg text-left">
+                    <h2 class="text-center font-semibold text-4xl text-primary">Pindah Alamat</h2>
+                    <tbody class="bg-white">
+                        <tr>
+                            <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
+                                Alamat Tujuan
+                            </td>
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+    
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
+                                Desa/Kelurahan
+                            </td>
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
+                                Kecamatan
+                            </td>
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
+                                Kota/Kabupaten
+                            </td>
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                                
+                            </td>
+                        </tr>
+                        <tr>
+                            <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
+                                Pengikut
+                            </td>
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                                
+                            </td>
                         </tr>
                     </tbody>
                 </table>
