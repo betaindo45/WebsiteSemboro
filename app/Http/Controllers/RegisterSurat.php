@@ -57,8 +57,8 @@ class registersurat extends Controller
             ]); 
         }
 
-        $validatedData['imagenik']=$request->file('imagenik')->store('ktp');
-        $validatedData['imagekk']=$request->file('imagekk')->store('kk');
+        $validatedData['imagenik']=$request->file('imagenik')->store('public/ktp');
+        $validatedData['imagekk']=$request->file('imagekk')->store('public/kk');
         post::create($validatedData);
         //redirect dibenerin dengan halaman terpisah
         return redirect('/success');
