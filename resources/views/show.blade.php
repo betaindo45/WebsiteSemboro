@@ -19,9 +19,9 @@
                                 Nama</th>
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
                                 {{ $posts->name }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
                                 </button>
                             </td>
                         </tr>
@@ -30,22 +30,22 @@
                                 Jenis Kelamin</th>
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
                                 {{ $posts->name }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Agama</th>
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
                                 {{ $posts->agama }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
@@ -53,9 +53,9 @@
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->nik }}
                             </td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
+                            <td class="text-center">
+                                <button>
+                                    <i class="fa-regular fa-clipboard"></i>
                                 </button>
                             </td>
                         </tr>
@@ -64,66 +64,66 @@
                                 Tempat, Tanggal Lahir</th>
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
                                 {{ $posts->name }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Pekerjaan</th>
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
                                 {{ $posts->name }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Alamat</th>
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
                                 {{ $posts->name }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 KK</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->kk }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 Keperluan</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->keperluan }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 Keterangan</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->keterangan }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
@@ -135,44 +135,36 @@
                                     Sudah Disetujui
                                 @endif
                             </td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                            <td></td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 No HP</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->nohp }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900 ">
                                 Email</th>
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->email }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td class="text-center">
+                                    <button>
+                                        <i class="fa-regular fa-clipboard"></i>
+                                    </button>
+                                </td>
                         </tr>
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Penerimaan Surat</th>
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
                                 {{ $posts->name }}</td>
-                            <td class="flex flex-wrap">
-                                <button class="w-1/10" onclick="copas()">
-                                    <i class="fa-regular fa-clipboard items-center justify-center"></i>
-                                </button>
-                            </td>
+                                <td></td>
                         </tr>
                     </tbody>
                 </table>
