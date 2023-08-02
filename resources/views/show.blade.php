@@ -11,16 +11,16 @@
         <div class="container">
             <div class="flex flex-wrap">
                 <table
-                    class="mb-36 border-separate border-spacing-2 w-full border border-slate-400 bg-white/30 backdrop-blur-lg shadow-sm p-5 rounded-lg text-left">
-                    <h2 class="text-center font-semibold text-4xl text-primary">Detail Surat</h2>
+                    class="mb-24 border-separate border-spacing-2 w-full border border-slate-400 bg-white/30 backdrop-blur-lg shadow-sm p-5 rounded-lg text-left">
+                    <h2 class="text-center font-semibold text-4xl text-primary mb-5">Detail Surat</h2>
                     <tbody class="bg-white">
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Nama</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">
                                 {{ $posts->name }}</td>
                             <td class="text-center">
-                                <button>
+                                <button onclick="copyToClipboard({{$posts->name}})" value="{{ $posts->name }}">
                                     <i class="fa-regular fa-clipboard"></i>
                                 </button>
                             </td>
@@ -28,7 +28,7 @@
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Jenis Kelamin</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->name }}</td>
                             <td class="text-center">
                                 <button>
@@ -39,7 +39,7 @@
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Agama</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->agama }}</td>
                             <td class="text-center">
                                 <button>
@@ -62,7 +62,7 @@
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Tempat, Tanggal Lahir</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->name }}</td>
                             <td class="text-center">
                                 <button>
@@ -73,7 +73,7 @@
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Pekerjaan</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->name }}</td>
                             <td class="text-center">
                                 <button>
@@ -84,7 +84,7 @@
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Alamat</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->name }}</td>
                             <td class="text-center">
                                 <button>
@@ -162,53 +162,54 @@
                         <tr>
                             <th class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Penerimaan Surat</th>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
                                 {{ $posts->name }}</td>
                             <td></td>
                         </tr>
                     </tbody>
                 </table>
-                <table class="mb-36 border-separate border-spacing-2 w-full border border-slate-400 bg-white/30 backdrop-blur-lg shadow-sm p-5 rounded-lg text-left">
-                    <h2 class="text-center font-semibold text-4xl text-primary">Pindah Alamat</h2>
+                <table
+                    class="mb-36 border-separate border-spacing-2 w-full border border-slate-400 bg-white/30 backdrop-blur-lg shadow-sm p-5 rounded-lg text-left">
+                    <h2 class="text-center font-semibold text-4xl text-primary mb-5">Pindah Alamat</h2>
                     <tbody class="bg-white">
                         <tr>
                             <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Alamat Tujuan
                             </td>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
-    
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
+
                             </td>
                         </tr>
                         <tr>
                             <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Desa/Kelurahan
                             </td>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
-                                
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
+
                             </td>
                         </tr>
                         <tr>
                             <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Kecamatan
                             </td>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
-                                
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
+
                             </td>
                         </tr>
                         <tr>
                             <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Kota/Kabupaten
                             </td>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
-                                
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
+
                             </td>
                         </tr>
                         <tr>
                             <td class="w-1/10 border border-slate-300 font-semibold p-4 text-slate-900">
                                 Pengikut
                             </td>
-                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500" >
-                                
+                            <td class="w-7/10 border border-slate-300 p-4 text-slate-500">
+
                             </td>
                         </tr>
                     </tbody>
@@ -283,19 +284,9 @@
     </section>
     <x-footer />
     <script>
-        function copas() {
-            // Get the text field
-            var copyText = document.getElementById("name");
-
-            // Select the text field
-            copyText.select();
-            copyText.setSelectionRange(0, 99999); // For mobile devices
-
-            // Copy the text inside the text field
-            navigator.clipboard.writeText(copyText.value);
-
-            // Alert the copied text
-            alert("Copied the text: " + copyText.value);
+        function copyToClipboard($copy) {
+            document = $copy;
+            document.execCommand('copy');
         }
     </script>
 </body>
