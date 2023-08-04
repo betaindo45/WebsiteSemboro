@@ -14,11 +14,11 @@
             </a>
             <a href="/DashboardAdmin/view"
                 class="inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-105 duration-300 ease-in-out">
-                Admin
+                Dashboard Admin
             </a>
             <form action="/logout" method="post">
                 @csrf
-                <button type="submit" class="inline-block text-white no-underline text-center h-10 pt-4 md:h-auto md:pt-4 transform hover:scale-105 duration-300 ease-in-out">
+                <button type="submit" class="inline-block text-white no-underline text-center h-10 pt-4 md:h-auto md:pt-4 transform hover:scale-105 duration-300 ease-in-out"onclick="return confirm('Apakah anda ingin logout?')" >
                     Logout
                 </button>
             </form>

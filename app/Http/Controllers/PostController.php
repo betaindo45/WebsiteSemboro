@@ -51,17 +51,29 @@ class PostController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(post $post)
+    public function edit(post $view)
     {
         //
+        return view('show',[
+            'posts'=>$view
+        ]);
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, post $post)
+    public function update(Request $request, post $view)
     {
         //
+        $rules=[
+            'status'=>'required'
+        ];
+        $validatedData = $request->validate($rules);
+        post::where('id',$view->id) 
+        ->update($validatedData);
+
+        return redirect('/DashboardAdmin/view');
+
     }
 
     /**
