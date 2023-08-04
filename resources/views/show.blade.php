@@ -2,6 +2,15 @@
 @section('title', 'Dashboard')
 
 <body class="bg-default">
+
+    
+    {{ $gambarnik = $posts->imagenik }}
+    
+
+    <?php 
+    $gambarnik=trim($gambarnik, "public");
+    ?>
+
     @auth
         <x-loginheader />
     @else
@@ -56,13 +65,17 @@
                     </thead>
                     <tbody>
                         <tr>
-                            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">{{ $posts->name }}</td>
+                            <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">
+                                <img src="{{ asset('storage/'.$gambarnik) }}" alt="gambarNik">
+                                <a href="{{ asset('storage/'.$gambarnik) }}">dawd</a>
+                                </td>
                             <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">{{ $posts->nik }}</td>
                             <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">{{ $posts->kk }}</td>
                             <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">{{ $posts->keperluan }}</td>
                             <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">{{ $posts->keterangan }}</td>
                             <td class="border border-slate-300 dark:border-slate-700 p-4 text-slate-500 dark:text-slate-400">@if($posts->status===0)
                                 Belum Disetujui
+                                
                             @else
                                 Sudah Disetujui
                             @endif</td>
