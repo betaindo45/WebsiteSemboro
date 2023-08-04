@@ -20,7 +20,7 @@
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="name">{{ $posts->name }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('name')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -30,7 +30,7 @@
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="kelamin">{{ $posts->name }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('kelamin')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -40,7 +40,7 @@
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="agama">{{ $posts->agama }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('agama')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -50,7 +50,7 @@
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500" id="nik">{{ $posts->nik }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('nik')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -60,7 +60,7 @@
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="ttl">{{ $posts->name }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('ttl')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -70,7 +70,7 @@
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="pekerjaan">{{ $posts->name }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('pekerjaan')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -80,7 +80,7 @@
                             <td class="w-7/10 border border-slate-300 p-4 text-slate-500" id="alamat">{{ $posts->name }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('alamat')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -90,7 +90,7 @@
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500" id="kk">{{ $posts->kk }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('kk')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -100,7 +100,7 @@
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500" id="keperluan">{{ $posts->keperluan }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('keperluan')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -110,7 +110,7 @@
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500" id="keterangan">{{ $posts->keterangan }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('keterangan')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -132,7 +132,7 @@
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500" id="nohp">{{ $posts->nohp }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('nohp')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -142,7 +142,7 @@
                             <td class="w-8/10 border border-slate-300 p-4 text-slate-500" id="email">{{ $posts->email }}</td>
                             <td class="text-center">
                                 <button onclick="copyContent('email')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -168,7 +168,7 @@
                             </td>
                             <td class="text-center">
                                 <button onclick="copyContent('alamattujuan')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -181,7 +181,7 @@
                             </td>
                             <td class="text-center">
                                 <button onclick="copyContent('desa')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -194,7 +194,7 @@
                             </td>
                             <td class="text-center">
                                 <button onclick="copyContent('kecamatan')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -207,7 +207,7 @@
                             </td>
                             <td class="text-center">
                                 <button onclick="copyContent('kota')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
@@ -220,7 +220,7 @@
                             </td>
                             <td class="text-center">
                                 <button onclick="copyContent('pengikut')" class="p-5">
-                                    <i class="fa-regular fa-clipboard"></i>
+                                    <i class="fa-regular fa-clipboard fa-2xl"></i>
                                 </button>
                             </td>
                         </tr>
