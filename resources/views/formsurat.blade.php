@@ -48,9 +48,17 @@
                         <label for="agama"
                             class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Agama<span
                                 class="text-red-600 text-2xl">*</span></label>
-                        <input id="agama" type="text" name="agama" placeholder="" autocomplete="given-name"
-                            class="@error('name') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
-                            required value="{{ old('agama') }}" />
+                        <select name="agama" id="agama"
+                            class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
+                            required value="{{ old('agama') }}">
+                            <option value="" disabled selected hidden>Pilih Salah Satu</option>
+                            <option value="Islam">Islam</option>
+                            <option value="Protestan">Protestan</option>
+                            <option value="Katholik">Katholik</option>
+                            <option value="Hindu">Hindu</option>
+                            <option value="Budha">Budha</option>
+                            <option value="Konghucu">Konghucu</option>
+                        </select>
                         @error('agama')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
@@ -70,7 +78,7 @@
                             Kartu Tanda Penduduk (KTP)<span class="text-red-600 text-2xl">*</span></label>
                         <input id="imagenik" type="file" name="imagenik" placeholder=""
                             class="@error('imagenik') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
-                            required/>
+                            required />
                         @error('imagenik')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
@@ -121,7 +129,7 @@
                             Kartu Keluarga (KK)<span class="text-red-600 text-2xl">*</span></label>
                         <input id="imagekk" type="file" name="imagekk" placeholder=""
                             class="@error('imagekk') is-invalid @enderror block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
-                            required/>
+                            required />
                         @error('imagekk')
                             <div class="alert alert-danger"> {{ $message }} </div>
                         @enderror
@@ -133,7 +141,8 @@
                             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
                             required>
                             <option value="" disabled selected hidden>Pilih Salah Satu</option>
-                            <option value="Surat Keterangan Kepemilikan Kendaraan Bermotor">Surat Keterangan Kepemilikan
+                            <option value="Surat Keterangan Kepemilikan Kendaraan Bermotor">Surat Keterangan
+                                Kepemilikan
                                 Kendaraan Bermotor</option>
                             <option value="Surat Keterangan Penghasilan">Surat Keterangan Penghasilan</option>
                             <option value="Surat Keterangan Miskin">Surat Keterangan Miskin</option>
@@ -143,7 +152,8 @@
                             <option value="Surat Keterangan Beda Identitas">Surat Keterangan Beda Identitas</option>
                             <option value="Surat Keterangan Organisasi Terlarang">Surat Keterangan Organisasi Terlarang
                                 (OT)</option>
-                            <option value="Surat Keterangan Domisili Lembaga">Surat Keterangan Domisili Lembaga</option>
+                            <option value="Surat Keterangan Domisili Lembaga">Surat Keterangan Domisili Lembaga
+                            </option>
                             <option value="Surat Keterangan Domisili/Tempat Tinggal">Surat Keterangan Domisili/Tempat
                                 Tinggal</option>
                             <option value="Surat Keterangan Pindah Tempat Tinggal">Surat Keterangan Pindah Tempat
@@ -156,7 +166,8 @@
                             <option value="Surat Keterangan Usaha">Surat Keterangan Usaha</option>
                             <option value="Surat Keterangan Kepemilikan Tanah">Surat Keterangan Kepemilikan Tanah
                             </option>
-                            <option value="Surat Keterangan Lain-Lain (Umum)">Surat Keterangan Lain-Lain (Umum)</option>
+                            <option value="Surat Keterangan Lain-Lain (Umum)">Surat Keterangan Lain-Lain (Umum)
+                            </option>
                         </select>
                         @error('keperluan')
                             <div class="alert alert-danger"> {{ $message }} </div>
@@ -193,7 +204,9 @@
                         @enderror
 
 
-                        <label for="cetak" class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Penerimaan Surat<span class="text-red-600 text-2xl">*</span></label>
+                        <label for="cetak"
+                            class="block mt-2 text-xs font-semibold text-gray-600 uppercase">Penerimaan Surat<span
+                                class="text-red-600 text-2xl">*</span></label>
                         <select name="cetak" id="cetak"
                             class="block w-full p-3 mt-2 text-gray-700 bg-gray-200 appearance-none focus:outline-none focus:bg-gray-300 focus:shadow-inner rounded-lg"
                             required>

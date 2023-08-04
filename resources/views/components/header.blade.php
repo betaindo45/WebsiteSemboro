@@ -14,7 +14,7 @@
             </a>
             <a href="/login"
                 class="max-sm:text-xs inline-block text-white no-underline text-center h-10 p-2 md:h-auto md:p-4 transform hover:scale-105 duration-300 ease-in-out">
-                Admin
+                Login
             </a>
         </div>
     </div>
